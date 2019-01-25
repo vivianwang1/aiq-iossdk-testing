@@ -32,6 +32,8 @@ public class BaseScanner {
 		//
 		d.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
 		
+		d.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "60");
+		
 		d.setCapability(MobileCapabilityType.APP, fs.getAbsolutePath());
 		
 		driver = new IOSDriver<>(new URL("http://127.0.0.1:4723/wd/hub"),d);
