@@ -1,7 +1,5 @@
 package testpac;
 
-//test
-
 import java.net.MalformedURLException;
 
 import org.openqa.selenium.remote.RemoteWebElement;
